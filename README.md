@@ -58,7 +58,7 @@ d.抽象类中，且不包含任何实现，派生类必须覆盖它们。接口
 
 ## 7，Android activity生命周期，onStop 和onPause的区别，生命周期也是想着说的，说了几个方法，没具体的说，然后就问onStop 和onPause的区别,模棱两可说了点，感觉不怎么对，
 
-
+  https://github.com/xuyang-happy/ByteDance_Interview/blob/master/Activity/lifecycle.jpg
 
 关于activity的四个状态： 
 running-poused-stopped-killed
