@@ -6,7 +6,7 @@ package com.gdut.bytedance_interview;
  * 单例-懒汉式,用的比较多的 同步锁DCL
  * 这个之前写了，没问题，但是，问我怎么调用
  * 我写了 Singleton instance = Singleton.getInstance();
- *  好像也没什么问题  接着，快速排序
+ * 好像也没什么问题  接着，快速排序
  */
 public class Singleton {
     // 加 volatile关键字， 懒汉式变种，属于懒汉式中最好的写法，保证了：延迟加载和线程
