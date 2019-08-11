@@ -143,4 +143,6 @@ oncreate()->onstart()->onResume()->onRestart()->onPouse()->onStop()->onDestory()
 ### 3，Activity启动方式
 ### 4，set集合
 
+# 1
+
 
