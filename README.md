@@ -142,16 +142,16 @@ oncreate()->onstart()->onResume()->onRestart()->onPouse()->onStop()->onDestory()
 ### 2，什么是广播，什么是广播接收者
 ### 3，Activity四种启动方式
  #### 1.默认启动模式standard：
-      该模式可以被设定，不在manifest设定时候，Activity的默认模式就是standard。在该模式下，启动的Activity会依照启动顺序被依次压入Task中
+    该模式可以被设定，不在manifest设定时候，Activity的默认模式就是standard。在该模式下，启动的Activity会依照启动顺序被依次压入Task中
  #### 2.栈顶复用模式singleTop：
-      在该模式下，如果栈顶Activity为我们要新建的Activity（目标Activity），那么就不会重复创建新的Activity。
+    在该模式下，如果栈顶Activity为我们要新建的Activity（目标Activity），那么就不会重复创建新的Activity。
  #### 3.栈内复用模式singleTask：
-        与singleTop模式相似，只不过singleTop模式是只是针对栈顶的元素，而singleTask模式下，如果task栈内存在目标Activity实例，则：
-        1 将task内的对应Activity实例之上的所有Activity弹出栈。
-        2.将对应Activity置于栈顶，获得焦点。
+    与singleTop模式相似，只不过singleTop模式是只是针对栈顶的元素，而singleTask模式下，如果task栈内存在目标Activity实例，则：
+    1 将task内的对应Activity实例之上的所有Activity弹出栈。
+    2.将对应Activity置于栈顶，获得焦点。
  #### 4.全局唯一模式singleInstance：
-        这是我们最后的一种启动模式，也是我们最恶心的一种模式：在该模式下，我们会为目标Activity分配一个新的affinity，并创建一个新的Task栈，将目标Activity放入新的Task，并让目标Activity获得焦点。新的Task有且只有这一个Activity实例。 
-        如果已经创建过目标Activity实例，则不会创建新的Task，而是将以前创建过的Activity唤醒（对应Task设为Foreground状态）
+    这是我们最后的一种启动模式，也是我们最恶心的一种模式：在该模式下，我们会为目标Activity分配一个新的affinity，并创建一个新的Task栈，将目标Activity放入新的Task，并让目标Activity获得焦点。新的Task有且只有这一个Activity实例。 
+    如果已经创建过目标Activity实例，则不会创建新的Task，而是将以前创建过的Activity唤醒（对应Task设为Foreground状态）
 
 ### 4，set集合
 
